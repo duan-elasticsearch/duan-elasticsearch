@@ -8,4 +8,5 @@ type (
 	Query = query.Query
 	Subnode = query.Subnode
 	Bool = query.Bool
+	QueryResponse = query.QueryResponse
 )
