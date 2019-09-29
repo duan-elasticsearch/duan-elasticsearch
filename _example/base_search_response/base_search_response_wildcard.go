@@ -39,14 +39,8 @@ func main () {
 		es.Search.WithSize (4),
 		es.Search.WithBody (esutil.NewJSONReader (&d_es.DuanElasticsearch {
 			Query: &d_es.Query {
-				Bool: &d_es.Bool {
-					Must: &[]d_es.Subnode {
-						d_es.Subnode {
-							Match: &PasswdCrackType {
-								Value: "123456789",
-							},
-						},
-					},
+				Wildcard: &PasswdCrackType {
+					Value: "*34567*",
 				},
 			},
 		})),
