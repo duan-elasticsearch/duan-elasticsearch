@@ -59,4 +59,6 @@ func main () {
 
 	resObj.CoverSource (reflect.TypeOf (PasswdCrackType{}))
 	fmt.Println (resObj)
+
+	fmt.Println ("password:", resObj.Hits.Hits[0].Source.(*PasswdCrackType).Key)
 }
