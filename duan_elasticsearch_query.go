@@ -1,7 +1,7 @@
 package duan_elasticsearch
 
 import (
-	query "github.com/duan-elasticsearch/duan_elasticsearch_query/v5"
+	"github.com/duan-elasticsearch/duan_elasticsearch_query/v7"
 )
 
 type (

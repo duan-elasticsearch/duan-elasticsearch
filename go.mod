@@ -1,8 +1,5 @@
-module github.com/duan-elasticsearch/duan_elasticsearch/v5
+module github.com/duan-elasticsearch/duan_elasticsearch/v7
 
 go 1.13
 
-require (
-	github.com/duan-elasticsearch/duan_elasticsearch_query/v5 v5.0.0-20190929091905-df3971bba2ee
-	github.com/elastic/go-elasticsearch/v5 v5.6.2-0.20190910075047-210565277d02
-)
+require github.com/duan-elasticsearch/duan_elasticsearch_query/v7 v7.5.1-0.20200311073057-ae7c9fcb0b51
