@@ -11,7 +11,6 @@ import (
 	"github.com/elastic/go-elasticsearch/v7/estransport"
 
 	d_es "github.com/duan-elasticsearch/duan_elasticsearch/v7"
-	"github.com/duan-elasticsearch/duan_elasticsearch_query/v7"
 )
 
 type TestType struct {
@@ -52,7 +51,7 @@ func main () {
 	}
 
 	fmt.Println (res)
-	resObj := query.QueryResponse {}
+	resObj := d_es.QueryResponse {}
 
 	if err := json.NewDecoder (res.Body).Decode (&resObj); err != nil {
 		panic (err)
@@ -63,4 +62,5 @@ func main () {
 	fmt.Println (resObj)
 	fmt.Println (resObj.Hits.Hits[0].SourceObj.(*TestType).Content)
 	fmt.Println (resObj.Hits.Hits[0].SourceObj.(*TestType).FilePath)
+	fmt.Println (resObj.Hits.Hits[0].Source)
 }
