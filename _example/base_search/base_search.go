@@ -11,13 +11,11 @@ import (
 )
 
 type PasswdCrackType struct {
-	HType string `json:"h_type,omitempty"`
-	Key string `json:"key,omitempty"`
-	Value string `json:"value,omitempty"`
+	CreateTime string `json:"create_time,omitempty"`
 }
 
 var host = []string {
-	"http://192.168.11.133:9200",
+	"http://192.168.88.120:19200",
 }
 
 func main () {
@@ -33,15 +31,15 @@ func main () {
 	}
 
 	res, err := es.Search (
-		es.Search.WithIndex ("password"),
+		es.Search.WithIndex ("group_data"),
 		es.Search.WithSize (4),
 		es.Search.WithBody (esutil.NewJSONReader (&d_es.DuanElasticsearch {
 			Query: &d_es.Query {
 				Bool: &d_es.Bool {
 					Must: &[]d_es.Subnode {
 						d_es.Subnode {
-							Match: &PasswdCrackType {
-								Value: "123456789",
+							Wildcard: &PasswdCrackType {
+								CreateTime :"*1*",
 							},
 						},
 					},

@@ -9,4 +9,5 @@ type (
 	Subnode = query.Subnode
 	Bool = query.Bool
 	QueryResponse = query.QueryResponse
+	QueryResponseHitsOne = query.QueryResponseHitsOne
 )
