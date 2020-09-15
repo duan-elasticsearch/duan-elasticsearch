@@ -7,6 +7,7 @@ import (
 type (
 	Query = query.Query
 	Subnode = query.Subnode
+	QueryString = query.QueryString
 	Bool = query.Bool
 	QueryResponse = query.QueryResponse
 	QueryResponseHitsOne = query.QueryResponseHitsOne
