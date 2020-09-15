@@ -10,5 +10,7 @@ github.com/duan-elasticsearch/duan_elasticsearch_query/v7 v7.5.1-0.2020031308004
 github.com/duan-elasticsearch/duan_elasticsearch_query/v7 v7.5.1-0.20200313080042-ac8ceb014362/go.mod h1:pt7XvGyoHrZN+jrnVkie/8ZZvaq45Y3TwkK9oF8e6to=
 github.com/duan-elasticsearch/duan_elasticsearch_query/v7 v7.5.1-0.20200316064124-570f8d4de73b h1:4TzcZ7PUywweYSqViDKuH9WLxVhguwn/TyClqxNN5Wk=
 github.com/duan-elasticsearch/duan_elasticsearch_query/v7 v7.5.1-0.20200316064124-570f8d4de73b/go.mod h1:pt7XvGyoHrZN+jrnVkie/8ZZvaq45Y3TwkK9oF8e6to=
+github.com/duan-elasticsearch/duan_elasticsearch_query/v7 v7.5.1-0.20200915080434-5ca35ccdcf07 h1:dSBGL8y+muIbn0fE2ZhfJRJuazEe4KY1QbSstBUBbPc=
+github.com/duan-elasticsearch/duan_elasticsearch_query/v7 v7.5.1-0.20200915080434-5ca35ccdcf07/go.mod h1:pt7XvGyoHrZN+jrnVkie/8ZZvaq45Y3TwkK9oF8e6to=
 github.com/elastic/go-elasticsearch/v7 v7.5.0 h1:kXW+EKls2BwsyQujTmVrxANb3U0qoz9wEq8Zkf/JEco=
 github.com/elastic/go-elasticsearch/v7 v7.5.0/go.mod h1:OJ4wdbtDNk5g503kvlHLyErCgQwwzmDtaFC4XyOxXA4=
