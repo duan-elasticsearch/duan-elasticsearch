@@ -9,6 +9,9 @@ type DuanElasticsearch struct {
 	// 准确count使用
 	TrackTotalHits bool `json:"track_total_hits,omitempty"`
 
+	// 高亮显示字段
+	Highlight *Highlight `json:"highlight,omitempty"`
+
 	// 未实现的预留接口
 	Aggs   interface{} `json:"aggs,omitempty"`
 	Source interface{} `json:"_source,omitempty"`
