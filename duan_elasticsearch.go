@@ -13,7 +13,8 @@ type DuanElasticsearch struct {
 	Highlight *Highlight `json:"highlight,omitempty"`
 
 	// 未实现的预留接口
-	Aggs   interface{} `json:"aggs,omitempty"`
-	Source interface{} `json:"_source,omitempty"`
-	Sort   interface{} `json:"sort,omitempty"`
+	Aggs         interface{} `json:"aggs,omitempty"`
+	Source       interface{} `json:"_source,omitempty"`
+	Sort         interface{} `json:"sort,omitempty"`
+	ScriptFields interface{} `json:"script_fields,omitempty"`
 }
